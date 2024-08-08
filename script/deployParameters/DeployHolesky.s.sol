@@ -23,9 +23,9 @@ contract DeployHolesky is DeployUniversalRouter {
             routerRewardsDistributor: UNSUPPORTED_PROTOCOL,
             looksRareRewardsDistributor: UNSUPPORTED_PROTOCOL,
             looksRareToken: UNSUPPORTED_PROTOCOL,
-            v2Factory: 0x7A8aa7cDdB2846CDb3cC792FD47848e28AeEfdB2,
+            v2Factory: 0x593E80859079f38D4c19459f1E4f55A44a86bCcC,
             v3Factory: 0xe5DE50EdC20750eFfE8833bF3Bf5d72892b7AD54,
-            pairInitCodeHash: 0x1140ae914d176ac1defdd79292e8a309bf49f7c645ac011435c6e8b75dff6b64,
+            pairInitCodeHash: 0xe0d4c9aa46e27dc0f29e1fbc328dadb3455bbfc8dd936b2ea1abd5d028cc2813,
             poolInitCodeHash: 0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54
         });
 
