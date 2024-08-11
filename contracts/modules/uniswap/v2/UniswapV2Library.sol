@@ -93,9 +93,9 @@ library UniswapV2Library {
         returns (uint256 amountOut)
     {
         if (reserveIn == 0 || reserveOut == 0) revert InvalidReserves();
-        uint256 amountInWithFee = amountIn * 997;
+        uint256 amountInWithFee = amountIn * 9965;
         uint256 numerator = amountInWithFee * reserveOut;
-        uint256 denominator = reserveIn * 1000 + amountInWithFee;
+        uint256 denominator = reserveIn * 10000 + amountInWithFee;
         amountOut = numerator / denominator;
     }
 
@@ -110,8 +110,8 @@ library UniswapV2Library {
         returns (uint256 amountIn)
     {
         if (reserveIn == 0 || reserveOut == 0) revert InvalidReserves();
-        uint256 numerator = reserveIn * amountOut * 1000;
-        uint256 denominator = (reserveOut - amountOut) * 997;
+        uint256 numerator = reserveIn * amountOut * 10000;
+        uint256 denominator = (reserveOut - amountOut) * 9965;
         amountIn = (numerator / denominator) + 1;
     }
 
